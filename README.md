@@ -4,6 +4,17 @@ End-to-end UI and API test automation for the [EventHub](https://eventhub.rahuls
 
 The suite covers login, event search and filtering, multi-booking flows, network mocking, modifying live API responses, and a full create-verify-cancel booking flow using both API and UI.
 
+## JavaScript versions
+
+I first built each of these tests in JavaScript, then migrated the full suite to TypeScript (strict mode) in this repo.
+
+| Test | JavaScript repo |
+|---|---|
+| API + UI booking, cancel and cleanup | [Playwright-Booking-reference-API-UI-cancel-cleanup-test](https://github.com/sushma-tk/Playwright-Booking-reference-API-UI-cancel-cleanup-test) |
+| Mocked events catalog and filters | [Playwright-Mocked-Events-Catalog-Filter-reconciliation-Test](https://github.com/sushma-tk/Playwright-Mocked-Events-Catalog-Filter-reconciliation-Test) |
+| Patched booking summary and detail | [Playwright-Patched-Event-booking-summary-and-detail-reconciliation-test](https://github.com/sushma-tk/Playwright-Patched-Event-booking-summary-and-detail-reconciliation-test) |
+| Multi-booking history and detail | [Playwright-Multi-Booking-History-and-Detail-Reconciliation-Test](https://github.com/sushma-tk/Playwright-Multi-Booking-History-and-Detail-Reconciliation-Test) |
+
 ## Tech stack
 
 - [Playwright Test](https://playwright.dev) (Chromium)
